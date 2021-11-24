@@ -8,9 +8,7 @@ import java.util.Currency;
 public class AustralianDollar implements ConvertableCurrency {
 
     @Override
-    public Double convert(CurrencyType currencyType) {
-
-        return (CurrencyType.UNIVERSAL_CURRENCY.getRate()/CurrencyType.AUSTRALIAN_DOLLAR.getRate())
-                * currencyType.getRate();
+    public CurrencyType getCurrencyType() {
+        return CurrencyType.AUSTRALIAN_DOLLAR;
     }
 }

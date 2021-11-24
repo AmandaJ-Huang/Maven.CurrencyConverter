@@ -6,9 +6,7 @@ import io.zipcoder.currencyconverterapplication.CurrencyType;
 public class UniversalCurrency implements ConvertableCurrency {
 
     @Override
-    public Double convert(CurrencyType currencyType) {
-
-        return (CurrencyType.UNIVERSAL_CURRENCY.getRate()/CurrencyType.UNIVERSAL_CURRENCY.getRate())
-                * currencyType.getRate();
+    public CurrencyType getCurrencyType() {
+        return CurrencyType.UNIVERSAL_CURRENCY;
     }
 }
